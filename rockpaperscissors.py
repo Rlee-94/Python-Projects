@@ -6,7 +6,7 @@ comp_score = 0
 ties = 0
 choices = ['r','p','s']
 
-#Program will run until user or comp reach 5 wins.
+#Program will run until user or comp reach 2 wins.
 
     user = input("Enter (r), (p), or (s):  ") 
     comp = random.choice(choices) 
