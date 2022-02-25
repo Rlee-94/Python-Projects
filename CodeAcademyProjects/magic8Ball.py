@@ -5,7 +5,7 @@ question = 'Will I win the lottery?'
 
 answer = ''
 
-random_number = random.randint(1,9)
+random_number = random.randint(1,9) #Choose random number between 1-9 and print statements below based on number chosen.
 
 if random_number == 1:
   answer == "Yes - definitely."
