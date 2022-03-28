@@ -1,4 +1,4 @@
-import requests #Allows us to make a request. Kinda like having a bowser without the browser
+import requests #Allows us to make a request. Kinda like having a browser without the browser
 import hashlib #Allows us to use SHA1 hashing
 import sys
 
