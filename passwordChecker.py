@@ -1,5 +1,5 @@
-import requests #Allows us to make a request. Kinda like having a browser without the browser
-import hashlib #Allows us to use SHA1 hashing
+import requests 
+import hashlib 
 import sys
 
 def request_api_data(query_char):
@@ -17,9 +17,9 @@ def get_password_leaks_count(hashes, hash_to_check):
     return 0
 
 def pwned_api_check(password):
-    sha1password = hashlib.sha1(password.encode('utf-8')).hexdigest().upper() #Returns string argument as hexadecimal digits. We need it returned in uppercase using UTF-8.
+    sha1password = hashlib.sha1(password.encode('utf-8')).hexdigest().upper() #Returns string argument as hexadecimal digits. Need it returned in uppercase using UTF-8.
     first5_char, tail = sha1password[:5], sha1password[5:] #Store first 5 characters in first variable, the remaining characters are the tail.
-    response = request_api_data(first5_char) #Argument for request_api_data func 
+    response = request_api_data(first5_char) 
     
     return get_password_leaks_count(response, tail) #Arguemnts for get_password_leaks_count
 
